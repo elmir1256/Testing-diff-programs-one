@@ -4,16 +4,17 @@ import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
     Calculator calculator = new Calculator();
-    @Test
-    public void testAdd(){
-        int result = calculator.add(3, 5);
-        Assertions.assertEquals(8, result);
-    }
 
     @Test
     public void testSubtract(){
         int result = calculator.subtract(10, 4);
         Assertions.assertEquals(6, result);
+    }
+
+    @Test
+    public void testAdd(){
+        int result = calculator.add(3, 5);
+        Assertions.assertEquals(8, result);
     }
 
     @Test
