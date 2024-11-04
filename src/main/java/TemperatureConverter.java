@@ -4,6 +4,6 @@ public class TemperatureConverter {
     }
 
     public double fahrenheitToCelsius(double fahrenheit) {
-        return (fahrenheit - 32) * 5/9;
+        return  Math.floor(((fahrenheit - 32) * 5/9) * 100) / 100;
     }
 }
