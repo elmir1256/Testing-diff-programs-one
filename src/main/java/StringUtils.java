@@ -1,9 +1,11 @@
+import org.jetbrains.annotations.NotNull;
+
 public class StringUtils {
-    public static String reverse(String input) {
+    public String reverse(String input) {
         return new StringBuilder(input).reverse().toString();
     }
 
-    public static boolean isPalindrome(String input) {
+    public boolean isPalindrome(String input) {
         String reversed = reverse(input);
         return input.equals(reversed);
     }
